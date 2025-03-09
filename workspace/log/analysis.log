@@ -1,0 +1,32 @@
+2025-03-10 00:10:38,388 - INFO - Phân tích âm thanh tích hợp với ESC-50
+2025-03-10 00:10:38,389 - INFO - --- Khởi tạo ---
+2025-03-10 00:10:38,389 - INFO - Kiểm tra ESC-50 dataset...
+2025-03-10 00:10:38,392 - INFO - Dataset đã sẵn sàng.
+2025-03-10 00:10:38,398 - INFO - Tổng số mẫu: 2000
+2025-03-10 00:10:38,399 - INFO - Số lớp: 50
+2025-03-10 00:10:38,399 - INFO - Các lớp: ['airplane', 'breathing', 'brushing_teeth', 'can_opening', 'car_horn', 'cat', 'chainsaw', 'chirping_birds', 'church_bells', 'clapping', 'clock_alarm', 'clock_tick', 'coughing', 'cow', 'crackling_fire', 'crickets', 'crow', 'crying_baby', 'dog', 'door_wood_creaks', 'door_wood_knock', 'drinking_sipping', 'engine', 'fireworks', 'footsteps', 'frog', 'glass_breaking', 'hand_saw', 'helicopter', 'hen', 'insects', 'keyboard_typing', 'laughing', 'mouse_click', 'pig', 'pouring_water', 'rain', 'rooster', 'sea_waves', 'sheep', 'siren', 'sneezing', 'snoring', 'thunderstorm', 'toilet_flush', 'train', 'vacuum_cleaner', 'washing_machine', 'water_drops', 'wind']
+2025-03-10 00:10:38,401 - INFO - --- Trích xuất đặc trưng ---
+2025-03-10 00:10:38,523 - INFO - Đã trích xuất đặc trưng cho: 1-100032-A-0.wav
+2025-03-10 00:10:38,523 - INFO - Đã hoàn thành trích xuất đặc trưng
+2025-03-10 00:10:38,523 - INFO - --- Visualization đặc trưng ---
+2025-03-10 00:10:38,815 - INFO - Đã lưu visualization tại: workspace\results\mel_dcase_util.png
+2025-03-10 00:10:38,816 - INFO - --- Huấn luyện mô hình ---
+2025-03-10 00:10:38,816 - INFO - Huấn luyện mô hình mới...
+2025-03-10 00:10:38,901 - INFO - Huấn luyện fold 1/2...
+2025-03-10 00:12:45,077 - INFO - Fold 1 - Accuracy: 0.0200
+2025-03-10 00:12:45,077 - INFO - Huấn luyện fold 2/2...
+2025-03-10 00:14:45,238 - INFO - Fold 2 - Accuracy: 0.0200
+2025-03-10 00:14:45,379 - INFO - Đã lưu mô hình vào workspace\models\model.json và workspace\models\model_weights.weights.h5
+2025-03-10 00:14:45,384 - INFO - Dự đoán với file: 1-103999-A-30.wav
+2025-03-10 00:14:45,385 - INFO - --- Demo dự đoán ---
+2025-03-10 00:14:45,402 - INFO - Đã trích xuất đặc trưng cho: 1-103999-A-30.wav
+2025-03-10 00:14:45,402 - INFO - Shape của mel_data trước khi xử lý: (64, 216)
+2025-03-10 00:14:45,403 - INFO - Kích thước input cho model: (1, 64, 128, 1)
+2025-03-10 00:14:45,621 - INFO - Đã dự đoán trực tiếp với model.predict()
+2025-03-10 00:14:45,622 - INFO - Prediction shape: (1, 50)
+2025-03-10 00:14:45,623 - WARNING - Không tìm thấy danh sách lớp từ dataset, sử dụng danh sách mặc định
+2025-03-10 00:14:45,624 - INFO - Lớp dự đoán: Class 38 (index: 38)
+2025-03-10 00:14:46,301 - INFO - Đã lưu kết quả dự đoán tại: workspace\results\prediction.png
+2025-03-10 00:14:46,302 - INFO - Kết quả dự đoán: Class 38
+2025-03-10 00:14:46,302 - INFO - --- Kết luận ---
+2025-03-10 00:14:46,302 - INFO - Đã hoàn thành phân tích âm thanh tích hợp với ESC-50
