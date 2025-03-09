@@ -10,8 +10,7 @@ Dự án này được xây dựng nhằm thực hiện phân tích âm thanh tr
 - [Cấu hình](#cấu-hình)
 - [Cách sử dụng](#cách-sử-dụng)
 - [Cấu trúc dự án](#cấu-trúc-dự-án)
-- [Đóng góp](#đóng-góp)
-- [Giấy phép](#giấy-phép)
+
 
 ## Giới thiệu
 
@@ -139,18 +138,6 @@ tuanh/
 └── README.md                # File hướng dẫn (bản này).
 ```
 
-## Đóng góp
-
-Các đóng góp và cải tiến cho dự án đều được hoan nghênh!  
-Nếu bạn có ý kiến đóng góp, bạn có thể tạo một Pull Request hoặc mở issue để thảo luận.
-
-## Giấy phép
-
-Dự án này được cấp phép theo [MIT License](LICENSE).
-
----
-
-Dự án này giúp bạn:
 - Tự động trích xuất đặc trưng âm thanh từ file gốc.
 - Huấn luyện mô hình CNN để phân loại âm thanh.
 - Dự đoán nhãn của file âm thanh mới và trực quan hoá kết quả.
